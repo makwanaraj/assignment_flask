@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Data</title>
+  </head>
+  <style>
+    tr:nth-child(odd) {
+      background-color: #e5e5e5;
+      widows: 100px;
+    }
+  </style>
+
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>name</th>
+          <th>year</th>
+          <th>battle_number</th>
+          <th>attacker_king</th>
+          <th>defender_king</th>
+          <th>attacker_1</th>
+          <th>attacker_2</th>
+          <th>attacker_3</th>
+          <th>attacker_4</th>
+          <th>defender_1</th>
+          <th>defender_2</th>
+          <th>defender_3</th>
+          <th>defender_4</th>
+          <th>attacker_outcome</th>
+          <th>battle_type</th>
+          <th>major_death</th>
+          <th>major_capture</th>
+          <th>attacker_size</th>
+          <th>defender_size</th>
+          <th>attacker_commander</th>
+          <th>defender_commander</th>
+          <th>summer</th>
+          <th>location</th>
+          <th>region</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in data %}
+        <tr>
+          <td>{{row[0]}}</td>
+          <td>{{row[1]}}</td>
+          <td>{{row[2]}}</td>
+          <td>{{row[3]}}</td>
+          <td>{{row[4]}}</td>
+          <td>{{row[5]}}</td>
+          <td>{{row[6]}}</td>
+          <td>{{row[7]}}</td>
+          <td>{{row[8]}}</td>
+          <td>{{row[9]}}</td>
+          <td>{{row[10]}}</td>
+          <td>{{row[11]}}</td>
+          <td>{{row[12]}}</td>
+          <td>{{row[13]}}</td>
+          <td>{{row[14]}}</td>
+          <td>{{row[15]}}</td>
+          <td>{{row[16]}}</td>
+          <td>{{row[17]}}</td>
+          <td>{{row[18]}}</td>
+          <td>{{row[19]}}</td>
+          <td>{{row[20]}}</td>
+          <td>{{row[21]}}</td>
+          <td>{{row[22]}}</td>
+          <td>{{row[23]}}</td>
+          <td>{{row[24]}}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </body>
+</html>
